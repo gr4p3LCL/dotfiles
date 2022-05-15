@@ -195,14 +195,11 @@ bindsym $mod+d exec rofi -modi drun -show drun \
 		
 ## rofi bindings for window menu (two bindings F10/$mod+t)
 
-bindsym $mod+t exec rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi 
+#bindsym $mod+t exec rofi -show window \
+#		-config ~/.config/rofi/rofidmenu.rasi
 
-bindsym F10 exec rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi 
-
-bindsym Print exec shot
-
+# Replace with your screenshot script/binary
+bindsym Print exec s
 
 default_border pixel 1
 default_floating_border pixel 1
