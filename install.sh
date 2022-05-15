@@ -26,8 +26,8 @@ sudo make install
 # Install something to make i3lock-fancy better
 cd $HOME
 git clone https://github.com/guimeira/i3lock-fancy-multimonitor.git
-cp -r i3lock-fancy-multimonitor $HOME/.i3
-chmod +x $HOME/.i3/i3lock-fancy-multimonitor/lock
+cp -r i3lock-fancy-multimonitor $HOME/.config/i3
+chmod +x $HOME/.config/i3/i3lock-fancy-multimonitor/lock
 echo "bindsym \$mod+p exec $HOME/.i3/i3lock-fancy-multimonitor/lock" >> $HOME/.i3/config
 
 # Install ohmyzsh and theme
