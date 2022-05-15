@@ -11,6 +11,7 @@ cd $HOME/dotfiles/.config/i3
 cp config $HOME/.config/i3/
 cd $HOME/dotfiles/config/terminator
 cp config $HOME/.config/terminator/
+mkdir $HOME/dotfiles/.config/rofi
 cd $HOME/dotfiles/.config/rofi
 cp rofidmenu.rasi $HOME/.config/rofi/
 cp arc_dark_colors.rasi $HOME/.config/rofi/
@@ -33,5 +34,5 @@ echo "bindsym \$mod+p exec $HOME/.i3/i3lock-fancy-multimonitor/lock" >> $HOME/.i
 # Install ohmyzsh and theme
 cd $HOME
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cd $HOME/dotfiles/.ohmyzsh/custom/themes/
-cp bash.zsh-theme $HOME/.ohmyzsh/custom/themes/
+cd $HOME/dotfiles/.oh-my-zsh/custom/themes/
+cp bash.zsh-theme $HOME/.oh-my-zsh/custom/themes/
