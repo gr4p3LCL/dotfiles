@@ -7,8 +7,15 @@ sudo pacman -Syu
 sudo pacman -S imagemagick util-linux scrot i3lock base-devel neofetch rofi terminator zsh
 
 # Install yay
+cd $HOME/dotfiles
 chmod +x install-yay.sh
 ./install-yay.sh
+
+# Install font
+mkdir -r $HOME/.local/share/fonts
+cd $HOME/dotfiles
+cp JetBrainsMono-Regular.ttf $HOME/.local/share/fonts/
+fc-cache -vf
 
 # Copy configs
 cd $HOME/dotfiles/.config/i3
@@ -42,3 +49,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 cd $HOME/dotfiles/.oh-my-zsh/custom/themes/
 cp bash.zsh-theme $HOME/.oh-my-zsh/custom/themes/
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="bash"/' $HOME/.zshrc
+
+cat aliases >> $HOME/.zshrc
