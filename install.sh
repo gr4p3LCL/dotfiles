@@ -4,7 +4,7 @@
 sudo pacman -Syu
 
 # Install some deps and other things
-sudo pacman -S imagemagick util-linux scrot i3lock base-devel neofetch rofi terminator zsh
+sudo pacman -S wget curl imagemagick util-linux scrot i3lock base-devel neofetch rofi terminator zsh
 
 # Install yay
 cd $HOME/dotfiles
