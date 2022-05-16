@@ -12,7 +12,7 @@ chmod +x install-yay.sh
 ./install-yay.sh
 
 # Install font
-mkdir -r $HOME/.local/share/fonts
+mkdir -p $HOME/.local/share/fonts
 cd $HOME/dotfiles
 cp JetBrainsMono-Regular.ttf $HOME/.local/share/fonts/
 fc-cache -vf
