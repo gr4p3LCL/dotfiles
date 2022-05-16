@@ -11,7 +11,7 @@ cd $HOME/dotfiles/.config/i3
 cp config $HOME/.config/i3/
 cd $HOME/dotfiles/.config/terminator
 cp config $HOME/.config/terminator/
-mkdir $HOME/dotfiles/.config/rofi
+mkdir $HOME/.config/rofi
 cd $HOME/dotfiles/.config/rofi
 cp rofidmenu.rasi $HOME/.config/rofi/
 cp arc_dark_colors.rasi $HOME/.config/rofi/
