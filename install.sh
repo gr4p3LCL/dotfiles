@@ -10,6 +10,7 @@ sudo pacman -S imagemagick util-linux scrot i3lock rofi terminator zsh
 cd $HOME/dotfiles/.config/i3
 cp config $HOME/.config/i3/
 cd $HOME/dotfiles/.config/terminator
+mkdir $HOME/.config/terminator/
 cp config $HOME/.config/terminator/
 mkdir $HOME/.config/rofi
 cd $HOME/dotfiles/.config/rofi
@@ -36,3 +37,4 @@ cd $HOME
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd $HOME/dotfiles/.oh-my-zsh/custom/themes/
 cp bash.zsh-theme $HOME/.oh-my-zsh/custom/themes/
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="bash"/' $HOME/.zshrc
