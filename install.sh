@@ -50,4 +50,5 @@ cd $HOME/dotfiles/.oh-my-zsh/custom/themes/
 cp bash.zsh-theme $HOME/.oh-my-zsh/custom/themes/
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="bash"/' $HOME/.zshrc
 
+# Aliases
 cat aliases >> $HOME/.zshrc
