@@ -4,7 +4,7 @@
 sudo pacman -Syu
 
 # Install some deps and other things
-sudo pacman -S wget curl imagemagick util-linux scrot i3lock base-devel neofetch rofi terminator zsh
+sudo pacman -S wget curl imagemagick util-linux scrot i3lock base-devel nitrogen neofetch rofi terminator zsh
 
 # Install yay
 cd $HOME/dotfiles
@@ -42,6 +42,9 @@ git clone https://github.com/guimeira/i3lock-fancy-multimonitor.git
 cp -r i3lock-fancy-multimonitor $HOME/.config/i3
 chmod +x $HOME/.config/i3/i3lock-fancy-multimonitor/lock
 echo "bindsym \$mod+p exec $HOME/.config/i3/i3lock-fancy-multimonitor/lock -p" >> $HOME/.config/i3/config
+
+# Set wallpaper with nitrogen
+echo "exec --no-startup-id nitrogen $HOME/dotfiles/arch-rainbow-1920x1080.png" >> $HOME/.config/i3/config
 
 # Install ohmyzsh and theme
 cd $HOME
