@@ -9,7 +9,7 @@ sudo pacman -S imagemagick util-linux scrot i3lock rofi terminator zsh
 # Copy configs
 cd $HOME/dotfiles/.config/i3
 cp config $HOME/.config/i3/
-cd $HOME/dotfiles/config/terminator
+cd $HOME/dotfiles/.config/terminator
 cp config $HOME/.config/terminator/
 mkdir $HOME/dotfiles/.config/rofi
 cd $HOME/dotfiles/.config/rofi
