@@ -1,6 +1,0 @@
-alias cl="clear"
-alias cdl="cd && clear"
-alias wg="wget"
-alias up="uptime -p"
-alias x="exit"
-alias please="sudo"
